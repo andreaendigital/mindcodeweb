@@ -1,0 +1,94 @@
+/* ============================================
+   Mind & Code - Custom Styles
+   Complementa Tailwind CSS vía CDN
+   ============================================ */
+
+/* --- Custom Properties (Variables de Marca) --- */
+:root {
+  --color-primario: #72881c;
+  --color-accent: #a8c202;
+  --color-fondo: #f8f9fa;
+  --color-texto: #1d211c;
+}
+
+/* --- Estilos base --- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* --- Keyframes: Scroll Reveal --- */
+@keyframes scroll-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Clases de Scroll Reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Accesibilidad: Reducción de movimiento --- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .revealed {
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- Dropzone --- */
+.dropzone {
+  border: 2px dashed var(--color-primario);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 200ms ease, background-color 200ms ease;
+  background-color: var(--color-fondo);
+}
+
+.dropzone:hover {
+  border-color: var(--color-accent);
+}
+
+.dropzone.dragover {
+  border-color: var(--color-accent);
+  background-color: rgba(168, 194, 2, 0.08);
+  border-style: solid;
+}
+
+.dropzone.error {
+  border-color: #dc2626;
+  background-color: rgba(220, 38, 38, 0.05);
+}

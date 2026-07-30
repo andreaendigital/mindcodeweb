@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind & Code | Headhunting IT y Selección de Personal</title>
+  <meta name="description" content="Mind & Code - Firma de Headhunting IT, Selección de Personal y Generación de Reportes de Capital Humano para empresas.">
+
+  <!-- Google Fonts: Inter + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-['Inter',_'Plus_Jakarta_Sans',_system-ui,_-apple-system,_sans-serif] text-[#1d211c] bg-[#f8f9fa] overflow-x-hidden">
+
+  <header>
+    <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#home" class="text-[#72881c] font-bold text-xl md:text-2xl min-h-[32px] flex items-center">
+          Mind &amp; Code
+        </a>
+
+        <!-- Navigation Links (hidden on mobile, shown on md+) -->
+        <ul id="nav-links" class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-[#a8c202] transition-colors duration-200">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-[#a8c202] transition-colors duration-200">Servicios</a></li>
+          <li><a href="#metodologia" class="hover:text-[#a8c202] transition-colors duration-200">Metodología</a></li>
+          <li><a href="#tarifas" class="hover:text-[#a8c202] transition-colors duration-200">Tarifas</a></li>
+          <li><a href="#ventajas" class="hover:text-[#a8c202] transition-colors duration-200">Por qué Elegirnos</a></li>
+          <li><a href="#candidatos" class="hover:text-[#a8c202] transition-colors duration-200">Candidatos</a></li>
+        </ul>
+
+        <!-- CTA Button (visible on md+) -->
+        <a href="#tarifas" class="hidden md:inline-block bg-[#a8c202] text-[#1d211c] font-semibold px-5 py-2 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
+          Necesito Talento
+        </a>
+
+        <!-- Hamburger Button (visible on mobile only) -->
+        <button id="mobile-menu-btn" type="button" aria-label="Menú de navegación" aria-expanded="false" class="md:hidden flex items-center justify-center w-11 h-11 rounded-md hover:bg-gray-100 transition-colors duration-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default, toggled by JS) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-md">
+        <ul class="flex flex-col px-4 py-4 gap-3 text-sm font-medium">
+          <li><a href="#home" class="block py-2 hover:text-[#a8c202] transition-colors duration-200">Inicio</a></li>
+          <li><a href="#servicios" class="block py-2 hover:text-[#a8c202] transition-colors duration-200">Servicios</a></li>
+          <li><a href="#metodologia" class="block py-2 hover:text-[#a8c202] transition-colors duration-200">Metodología</a></li>
+          <li><a href="#tarifas" class="block py-2 hover:text-[#a8c202] transition-colors duration-200">Tarifas</a></li>
+          <li><a href="#ventajas" class="block py-2 hover:text-[#a8c202] transition-colors duration-200">Por qué Elegirnos</a></li>
+          <li><a href="#candidatos" class="block py-2 hover:text-[#a8c202] transition-colors duration-200">Candidatos</a></li>
+        </ul>
+        <div class="px-4 pb-4">
+          <a href="#tarifas" class="block text-center bg-[#a8c202] text-[#1d211c] font-semibold px-5 py-2 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
+            Necesito Talento
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <section id="home" class="min-h-[calc(100vh-4rem)] flex items-center py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <!-- Columna izquierda: Texto y CTAs -->
+        <div class="flex flex-col gap-6">
+          <h1 class="text-4xl lg:text-5xl font-bold text-[#72881c] leading-tight">
+            Donde tu empresa crece junto a tu equipo.
+          </h1>
+          <p class="text-lg text-[#1d211c] max-w-lg">
+            Evaluamos perfiles para asegurar contrataciones acertadas, estables y de alto rendimiento en tu empresa.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#tarifas" class="inline-block bg-[#a8c202] text-[#1d211c] font-semibold px-6 py-3 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
+              Necesito Talento
+            </a>
+            <a href="#candidatos" class="inline-block border-2 border-[#a8c202] text-[#1d211c] font-semibold px-6 py-3 rounded-lg hover:bg-[#a8c202]/10 transition-colors duration-200">
+              Sumarme a la Red
+            </a>
+          </div>
+        </div>
+        <!-- Columna derecha: Imagen corporativa -->
+        <div class="flex justify-center lg:justify-end">
+          <svg class="rounded-2xl w-full max-w-md h-64 lg:h-80" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración corporativa de equipo tecnológico colaborando">
+            <rect width="600" height="400" rx="24" fill="#e8edcf"/>
+            <circle cx="200" cy="200" r="60" fill="#72881c" opacity="0.7"/>
+            <circle cx="380" cy="180" r="45" fill="#a8c202" opacity="0.6"/>
+            <rect x="150" y="280" width="300" height="8" rx="4" fill="#72881c" opacity="0.3"/>
+            <rect x="180" y="300" width="240" height="8" rx="4" fill="#72881c" opacity="0.2"/>
+            <rect x="250" y="120" width="80" height="100" rx="8" fill="#72881c" opacity="0.4"/>
+            <path d="M120 320 L200 260 L300 290 L400 240 L480 270" stroke="#a8c202" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="300" cy="80" r="20" fill="#a8c202" opacity="0.4"/>
+            <rect x="420" y="140" width="60" height="60" rx="8" fill="#a8c202" opacity="0.3"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-bold text-[#72881c] mb-10 text-center">Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: Headhunting IT & Digital -->
+          <div class="reveal bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Headhunting IT &amp; Digital</h3>
+            <p class="text-[#1d211c] text-base">Búsqueda especializada de talento tecnológico para roles clave en tu organización.</p>
+          </div>
+          <!-- Card 2: Red de Talentos -->
+          <div class="reveal bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Red de Talentos (SDRs y Perfiles Comerciales TI)</h3>
+            <p class="text-[#1d211c] text-base">Acceso a nuestra red de profesionales en ventas y perfiles comerciales del sector TI.</p>
+          </div>
+          <!-- Card 3: Outsourcing de Selección (RPO) -->
+          <div class="reveal bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Outsourcing de Selección (RPO)</h3>
+            <p class="text-[#1d211c] text-base">Externalizamos tu proceso de reclutamiento con metodología propia y resultados medibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodologia">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Título y subtítulo -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-[#72881c] mb-4">Nuestra Metodología</h2>
+          <p class="text-[#1d211c] text-lg max-w-2xl mx-auto">Un proceso integral y transparente para encontrar al candidato ideal.</p>
+        </div>
+
+        <!-- Timeline de 4 pasos -->
+        <div class="relative grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
+          <!-- Línea conectora horizontal (visible solo en desktop) -->
+          <div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-[#a8c202]/40" aria-hidden="true"></div>
+
+          <!-- Paso 1 -->
+          <div class="reveal flex flex-col items-center text-center relative">
+            <div class="w-14 h-14 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-xl mb-4 relative z-10 shadow-md">
+              1
+            </div>
+            <h3 class="font-bold text-[#1d211c] text-lg mb-2">Relevamiento de Perfil</h3>
+            <p class="text-[#1d211c] text-sm">Definimos el perfil ideal junto a tu equipo.</p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="reveal flex flex-col items-center text-center relative">
+            <div class="w-14 h-14 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-xl mb-4 relative z-10 shadow-md">
+              2
+            </div>
+            <h3 class="font-bold text-[#1d211c] text-lg mb-2">Sourcing Activo</h3>
+            <p class="text-[#1d211c] text-sm">Búsqueda proactiva en redes y bases propias.</p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="reveal flex flex-col items-center text-center relative">
+            <div class="w-14 h-14 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-xl mb-4 relative z-10 shadow-md">
+              3
+            </div>
+            <h3 class="font-bold text-[#1d211c] text-lg mb-2">Evaluación Multidimensional</h3>
+            <p class="text-[#1d211c] text-sm">Tests técnicos, psicológicos y de competencias.</p>
+          </div>
+
+          <!-- Paso 4 -->
+          <div class="reveal flex flex-col items-center text-center relative">
+            <div class="w-14 h-14 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-xl mb-4 relative z-10 shadow-md">
+              4
+            </div>
+            <h3 class="font-bold text-[#1d211c] text-lg mb-2">Entrega de Terna</h3>
+            <p class="text-[#1d211c] text-sm">Presentamos los 3 mejores candidatos validados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifas">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#72881c] text-center mb-12">Cobro por Éxito</h2>
+
+        <div class="reveal max-w-2xl mx-auto bg-white rounded-2xl shadow-xl border-2 border-[#a8c202] p-8">
+          <!-- Modelo de cobro -->
+          <p class="text-lg font-semibold text-[#1d211c] text-center mb-6">
+            Solo pagas al contratar exitosamente a un candidato.
+          </p>
+
+          <!-- Detalles de la tarifa -->
+          <ul class="space-y-5">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#a8c202] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-[#1d211c]"><strong>Tarifa:</strong> Equivalente a 1.2 sueldos brutos mensuales (120%) del candidato contratado.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#a8c202] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-[#1d211c]"><strong>Incluido sin costo adicional:</strong> Reportes técnicos y evaluación psicológica.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#a8c202] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-[#1d211c]"><strong>Garantía de continuidad (45 días):</strong> Si el candidato contratado no continúa en el cargo dentro de ese período, realizamos una reposición sin costo adicional.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ventajas">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-[#72881c] text-center mb-12">Por qué Elegirnos</h2>
+
+        <!-- Bento Grid: 1 col mobile, 2 cols tablet, 3 cols desktop with varied spans -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1: Descuento de lanzamiento - spans 2 cols on lg+ -->
+          <div class="reveal lg:col-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Descuento de Lanzamiento</h3>
+            <p class="text-[#1d211c] mb-4">Aprovecha nuestra tarifa especial por tiempo limitado para nuevos clientes.</p>
+            <span class="counter text-4xl font-bold text-[#a8c202]" data-target="50" data-counter="50" data-suffix="%">50%</span>
+          </div>
+
+          <!-- Card 2: Evaluaciones incluidas - 1 col -->
+          <div class="reveal bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Evaluaciones Incluidas</h3>
+            <p class="text-[#1d211c] mb-4">Reportes técnicos y psicológicos sin costo extra por cada finalista.</p>
+            <span class="text-3xl font-bold text-[#a8c202] break-words">hasta $100,000 CLP por finalista</span>
+          </div>
+
+          <!-- Card 3: Garantía extendida - 1 col -->
+          <div class="reveal bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Garantía Extendida</h3>
+            <p class="text-[#1d211c] mb-4">Reposición sin costo si el candidato no continúa en el cargo.</p>
+            <span class="text-4xl font-bold text-[#a8c202]">45 días</span>
+          </div>
+
+          <!-- Card 4: Flexibilidad de inversión - 1 col -->
+          <div class="reveal bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Flexibilidad de Inversión</h3>
+            <p class="text-[#1d211c] mb-4">Opciones de pago accesibles adaptadas a tu presupuesto.</p>
+            <span class="text-4xl font-bold text-[#a8c202] break-words">desde USD $1,000</span>
+          </div>
+
+          <!-- Card 5: Red de talentos pre-validados - spans 2 cols on lg+ -->
+          <div class="reveal lg:col-span-2 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+            <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Red de Talentos Pre-Validados</h3>
+            <p class="text-[#1d211c] mb-4">Contrataciones más ágiles gracias a nuestra base de candidatos evaluados.</p>
+            <span class="counter text-4xl font-bold text-[#a8c202]" data-target="30" data-counter="30" data-suffix="%">30% más rápidas</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="candidatos">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-[#72881c] mb-10 text-center">
+          Únete a la Red de Talentos: Diseña el siguiente paso en tu carrera profesional.
+        </h2>
+
+        <form id="candidate-form" class="reveal max-w-2xl mx-auto space-y-6" novalidate>
+          <!-- Nombre -->
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-[#1d211c] mb-1">Nombre</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
+              placeholder="Tu nombre completo">
+            <span class="error-message text-red-600 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-[#1d211c] mb-1">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
+              placeholder="tu@email.com">
+            <span class="error-message text-red-600 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- Rol/Especialidad -->
+          <div>
+            <label for="rol" class="block text-sm font-medium text-[#1d211c] mb-1">Rol/Especialidad</label>
+            <select id="rol" name="rol" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent">
+              <option value="" disabled selected>Selecciona tu especialidad</option>
+              <option value="Desarrollo Frontend">Desarrollo Frontend</option>
+              <option value="Desarrollo Backend">Desarrollo Backend</option>
+              <option value="Full Stack">Full Stack</option>
+              <option value="DevOps / SRE">DevOps / SRE</option>
+              <option value="Data Science / Analytics">Data Science / Analytics</option>
+              <option value="UX/UI Design">UX/UI Design</option>
+              <option value="Project/Product Management">Project/Product Management</option>
+              <option value="QA / Testing">QA / Testing</option>
+              <option value="Ciberseguridad">Ciberseguridad</option>
+              <option value="SDR / Ventas TI">SDR / Ventas TI</option>
+              <option value="Otro">Otro</option>
+            </select>
+            <span class="error-message text-red-600 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- LinkedIn -->
+          <div>
+            <label for="linkedin" class="block text-sm font-medium text-[#1d211c] mb-1">LinkedIn (opcional)</label>
+            <input type="url" id="linkedin" name="linkedin"
+              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
+              placeholder="https://linkedin.com/in/tu-perfil">
+            <span class="error-message text-red-600 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- CV Dropzone -->
+          <div>
+            <label for="cv-input" class="block text-sm font-medium text-[#1d211c] mb-1">CV (PDF o DOCX, máx. 5 MB)</label>
+            <div id="cv-dropzone" class="dropzone border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-[#a8c202] transition-colors duration-200">
+              <svg class="mx-auto h-10 w-10 text-gray-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+              </svg>
+              <p class="text-[#1d211c] text-sm">Arrastra tu CV aquí o haz clic para seleccionar</p>
+              <p class="text-gray-400 text-xs mt-1">PDF o DOCX, máximo 5 MB</p>
+              <input type="file" id="cv-input" name="cv" accept=".pdf,.docx" class="hidden">
+            </div>
+            <span class="error-message text-red-600 text-sm mt-1 block"></span>
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <button type="submit"
+              class="w-full bg-[#a8c202] text-[#1d211c] font-semibold px-6 py-3 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
+              Subir mi CV / Postular
+            </button>
+          </div>
+        </form>
+
+        <!-- Success Message -->
+        <div id="form-success" class="hidden max-w-2xl mx-auto mt-6 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
+          <p class="text-green-700 font-medium">¡Registro recibido exitosamente!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#72881c]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Top: Navigation and Social Icons -->
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8">
+        <!-- Navigation Links -->
+        <nav aria-label="Footer navigation">
+          <ul class="flex flex-wrap gap-4 text-sm font-medium">
+            <li><a href="#home" class="text-white hover:text-[#a8c202] transition-colors duration-200">Inicio</a></li>
+            <li><a href="#servicios" class="text-white hover:text-[#a8c202] transition-colors duration-200">Servicios</a></li>
+            <li><a href="#metodologia" class="text-white hover:text-[#a8c202] transition-colors duration-200">Metodología</a></li>
+            <li><a href="#tarifas" class="text-white hover:text-[#a8c202] transition-colors duration-200">Tarifas</a></li>
+            <li><a href="#ventajas" class="text-white hover:text-[#a8c202] transition-colors duration-200">Por qué Elegirnos</a></li>
+            <li><a href="#candidatos" class="text-white hover:text-[#a8c202] transition-colors duration-200">Candidatos</a></li>
+            <li><a href="#" class="text-white hover:text-[#a8c202] transition-colors duration-200">Política de Privacidad</a></li>
+          </ul>
+        </nav>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-4">
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white hover:text-[#a8c202] transition-colors duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white hover:text-[#a8c202] transition-colors duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <!-- Twitter/X -->
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="text-white hover:text-[#a8c202] transition-colors duration-200">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom: Copyright -->
+      <div class="border-t border-white/20 pt-6">
+        <p class="text-white text-sm text-center md:text-left">© 2025 Mind &amp; Code. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

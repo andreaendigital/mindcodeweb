@@ -1,0 +1,14 @@
+{
+  "name": "mindandcodeweb",
+  "version": "1.0.0",
+  "description": "Mind & Code Landing Page",
+  "scripts": {
+    "test": "vitest --run",
+    "test:node": "node --test tests/"
+  },
+  "devDependencies": {
+    "fast-check": "^3.23.2",
+    "jsdom": "^24.0.0",
+    "vitest": "^1.6.1"
+  }
+}

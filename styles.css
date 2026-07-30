@@ -103,39 +103,3 @@ html {
   overflow: visible;
   border-radius: 24px 24px 24px 0;
 }
-
-.service-notch {
-  position: relative;
-  padding: 16px 20px 16px 20px;
-  border-top-right-radius: 20px;
-  background-color: #f5f0e8;
-}
-
-/* Curva cóncava vertical (arriba del notch) */
-.service-notch::before {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle at 0 0, transparent 20px, #f5f0e8 20px);
-}
-
-/* Curva cóncava horizontal (a la derecha del notch) */
-.service-notch::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle at 0 100%, transparent 20px, #f5f0e8 20px);
-}
-
-/* All notch variants use section beige background */
-.service-notch--white,
-.service-notch--lime,
-.service-notch--olive {
-  background-color: #f5f0e8;
-}

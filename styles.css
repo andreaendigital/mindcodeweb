@@ -101,65 +101,48 @@ html {
 /* --- Service Card Notch (Inverted Corner Cutout) --- */
 .service-notch {
   position: relative;
-  padding: 12px 16px 12px 16px;
-  border-top-right-radius: 16px;
+  padding: 14px 20px 14px 20px;
+  border-top-right-radius: 20px;
+  background-color: #f5f0e8;
 }
 
 .service-notch::before {
   content: '';
   position: absolute;
-  top: -16px;
+  top: -20px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background: transparent;
+  box-shadow: 0 10px 0 0 #f5f0e8;
+  border-bottom-left-radius: 20px;
 }
 
 .service-notch::after {
   content: '';
   position: absolute;
   top: 0;
-  right: -16px;
-  width: 16px;
-  height: 16px;
+  right: -20px;
+  width: 20px;
+  height: 20px;
   background: transparent;
+  box-shadow: -10px 0 0 0 #f5f0e8;
+  border-bottom-left-radius: 20px;
 }
 
-/* White notch on beige background */
-.service-notch--white {
-  background-color: #f5f0e8;
-}
-.service-notch--white::before {
-  box-shadow: 0 8px 0 0 #f5f0e8;
-  border-bottom-left-radius: 16px;
-}
-.service-notch--white::after {
-  box-shadow: -8px 0 0 0 #f5f0e8;
-  border-bottom-left-radius: 16px;
-}
-
-/* Lime notch on beige background */
-.service-notch--lime {
-  background-color: #f5f0e8;
-}
-.service-notch--lime::before {
-  box-shadow: 0 8px 0 0 #f5f0e8;
-  border-bottom-left-radius: 16px;
-}
-.service-notch--lime::after {
-  box-shadow: -8px 0 0 0 #f5f0e8;
-  border-bottom-left-radius: 16px;
-}
-
-/* Olive notch on beige background */
+/* All notch variants share the same beige background */
+.service-notch--white,
+.service-notch--lime,
 .service-notch--olive {
   background-color: #f5f0e8;
 }
+.service-notch--white::before,
+.service-notch--lime::before,
 .service-notch--olive::before {
-  box-shadow: 0 8px 0 0 #f5f0e8;
-  border-bottom-left-radius: 16px;
+  box-shadow: 0 10px 0 0 #f5f0e8;
 }
+.service-notch--white::after,
+.service-notch--lime::after,
 .service-notch--olive::after {
-  box-shadow: -8px 0 0 0 #f5f0e8;
-  border-bottom-left-radius: 16px;
+  box-shadow: -10px 0 0 0 #f5f0e8;
 }

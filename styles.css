@@ -32,14 +32,19 @@ html {
 /* --- Clases de Scroll Reveal --- */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 500ms ease, transform 500ms ease;
+  transform: translateY(40px);
+  transition: opacity 600ms ease, transform 600ms ease;
 }
 
 .revealed {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Staggered delay for service cards */
+.service-card.reveal:nth-child(1) { transition-delay: 0ms; }
+.service-card.reveal:nth-child(2) { transition-delay: 150ms; }
+.service-card.reveal:nth-child(3) { transition-delay: 300ms; }
 
 /* --- Accesibilidad: Reducción de movimiento --- */
 @media (prefers-reduced-motion: reduce) {
@@ -91,4 +96,70 @@ html {
 .dropzone.error {
   border-color: #dc2626;
   background-color: rgba(220, 38, 38, 0.05);
+}
+
+/* --- Service Card Notch (Inverted Corner Cutout) --- */
+.service-notch {
+  position: relative;
+  padding: 12px 16px 12px 16px;
+  border-top-right-radius: 16px;
+}
+
+.service-notch::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+}
+
+.service-notch::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -16px;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+}
+
+/* White notch on beige background */
+.service-notch--white {
+  background-color: #f5f0e8;
+}
+.service-notch--white::before {
+  box-shadow: 0 8px 0 0 #f5f0e8;
+  border-bottom-left-radius: 16px;
+}
+.service-notch--white::after {
+  box-shadow: -8px 0 0 0 #f5f0e8;
+  border-bottom-left-radius: 16px;
+}
+
+/* Lime notch on beige background */
+.service-notch--lime {
+  background-color: #f5f0e8;
+}
+.service-notch--lime::before {
+  box-shadow: 0 8px 0 0 #f5f0e8;
+  border-bottom-left-radius: 16px;
+}
+.service-notch--lime::after {
+  box-shadow: -8px 0 0 0 #f5f0e8;
+  border-bottom-left-radius: 16px;
+}
+
+/* Olive notch on beige background */
+.service-notch--olive {
+  background-color: #f5f0e8;
+}
+.service-notch--olive::before {
+  box-shadow: 0 8px 0 0 #f5f0e8;
+  border-bottom-left-radius: 16px;
+}
+.service-notch--olive::after {
+  box-shadow: -8px 0 0 0 #f5f0e8;
+  border-bottom-left-radius: 16px;
 }

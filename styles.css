@@ -98,7 +98,12 @@ html {
   background-color: rgba(220, 38, 38, 0.05);
 }
 
-/* --- Service Card Notch (Inverted Corner Cutout) --- */
+/* --- Service Card Corner Override --- */
+.service-card {
+  overflow: visible;
+  border-radius: 24px 24px 24px 0;
+}
+
 .service-notch {
   position: relative;
   padding: 14px 20px 14px 20px;
@@ -106,43 +111,35 @@ html {
   background-color: #f5f0e8;
 }
 
+/* Curva cóncava vertical (arriba del notch, pegada a la tarjeta) */
 .service-notch::before {
   content: '';
   position: absolute;
-  top: -20px;
+  bottom: 100%;
   left: 0;
   width: 20px;
   height: 20px;
   background: transparent;
-  box-shadow: 0 10px 0 0 #f5f0e8;
   border-bottom-left-radius: 20px;
+  box-shadow: 0 10px 0 0 #f5f0e8;
 }
 
+/* Curva cóncava horizontal (a la derecha del notch, pegada a la tarjeta) */
 .service-notch::after {
   content: '';
   position: absolute;
   top: 0;
-  right: -20px;
+  left: 100%;
   width: 20px;
   height: 20px;
   background: transparent;
-  box-shadow: -10px 0 0 0 #f5f0e8;
   border-bottom-left-radius: 20px;
+  box-shadow: -10px 0 0 0 #f5f0e8;
 }
 
-/* All notch variants share the same beige background */
+/* All notch variants use section beige background */
 .service-notch--white,
 .service-notch--lime,
 .service-notch--olive {
   background-color: #f5f0e8;
-}
-.service-notch--white::before,
-.service-notch--lime::before,
-.service-notch--olive::before {
-  box-shadow: 0 10px 0 0 #f5f0e8;
-}
-.service-notch--white::after,
-.service-notch--lime::after,
-.service-notch--olive::after {
-  box-shadow: -10px 0 0 0 #f5f0e8;
 }

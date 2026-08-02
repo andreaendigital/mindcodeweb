@@ -398,6 +398,22 @@ function initCandidateForm() {
 
 // ---- Inicialización ----
 
+// ---- Hero Carousel ----
+
+function initHeroCarousel() {
+  var slides = document.querySelectorAll('.hero-slide');
+  if (slides.length === 0) return;
+
+  var current = 0;
+  var total = slides.length;
+
+  setInterval(function () {
+    slides[current].style.opacity = '0';
+    current = (current + 1) % total;
+    slides[current].style.opacity = '1';
+  }, 2700);
+}
+
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', function () {
     initSmoothScroll();
@@ -407,6 +423,7 @@ if (typeof document !== 'undefined') {
     initCounters();
     initCandidateForm();
     initDropzone();
+    initHeroCarousel();
   });
 }
 

@@ -386,6 +386,90 @@
       </div>
     </section>
 
+    <!-- Sección Formulario Alternativo (estilo oscuro con mapa mundi) -->
+    <section class="relative bg-[#1a2e1a] py-20 overflow-hidden">
+      <!-- Fondo mapa mundi SVG sutil -->
+      <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <ellipse cx="600" cy="300" rx="500" ry="250" stroke="#a8c202" stroke-width="0.5" fill="none"/>
+          <ellipse cx="600" cy="300" rx="400" ry="200" stroke="#a8c202" stroke-width="0.3" fill="none"/>
+          <ellipse cx="600" cy="300" rx="300" ry="150" stroke="#a8c202" stroke-width="0.3" fill="none"/>
+          <path d="M100 300 Q200 250 300 280 Q400 310 500 270 Q600 230 700 260 Q800 290 900 250 Q1000 210 1100 240" stroke="#a8c202" stroke-width="0.5" fill="none"/>
+          <path d="M150 350 Q250 320 350 340 Q450 360 550 330 Q650 300 750 320 Q850 340 950 310 Q1050 280 1150 300" stroke="#a8c202" stroke-width="0.4" fill="none"/>
+          <circle cx="250" cy="280" r="3" fill="#a8c202"/><circle cx="450" cy="260" r="2" fill="#a8c202"/><circle cx="600" cy="290" r="4" fill="#a8c202"/><circle cx="750" cy="250" r="2.5" fill="#a8c202"/><circle cx="900" cy="270" r="3" fill="#a8c202"/><circle cx="350" cy="320" r="2" fill="#a8c202"/><circle cx="550" cy="340" r="3" fill="#a8c202"/><circle cx="800" cy="310" r="2" fill="#a8c202"/>
+        </svg>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+          <!-- Columna izquierda: Info de contacto -->
+          <div>
+            <h2 class="text-4xl font-bold text-white mb-4">Contacto</h2>
+            <p class="text-white/60 mb-10">Conectemos para potenciar tu equipo con el talento que necesitas.</p>
+
+            <div class="space-y-6">
+              <div>
+                <p class="text-white/50 text-sm uppercase tracking-wider mb-1">Email:</p>
+                <p class="text-white font-medium">Hi@mindcode.cl</p>
+              </div>
+              <div>
+                <p class="text-white/50 text-sm uppercase tracking-wider mb-1">WhatsApp:</p>
+                <p class="text-white font-medium">+56 9 9413 7373</p>
+              </div>
+              <div>
+                <p class="text-white/50 text-sm uppercase tracking-wider mb-1">LinkedIn:</p>
+                <a href="https://linkedin.com/company/mindandcode" target="_blank" rel="noopener noreferrer" class="text-[#a8c202] hover:underline font-medium">Mind & Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha: Formulario oscuro -->
+          <div>
+            <p class="text-xl font-semibold text-white mb-1">¿Buscas talento para tu empresa?</p>
+            <p class="text-[#a8c202] text-lg font-medium mb-8">Escríbenos y te contactamos hoy.</p>
+
+            <form action="https://formsubmit.co/Hi@mindcode.cl" method="POST" class="space-y-5">
+              <input type="hidden" name="_subject" value="Contacto desde sección oscura - Mind & Code">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://mindandcode.github.io/mindandcodeweb/">
+              <input type="text" name="_honey" style="display:none">
+
+              <!-- Fila 1: Nombre y Email -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="text-white/70 text-sm mb-1 block">Nombre</label>
+                  <input type="text" name="nombre" required placeholder="Tu nombre" class="w-full bg-[#2a3f2a] border border-[#3d5a3d] rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#a8c202] transition-colors">
+                </div>
+                <div>
+                  <label class="text-white/70 text-sm mb-1 block">Email</label>
+                  <input type="email" name="email" required placeholder="tu@email.com" class="w-full bg-[#2a3f2a] border border-[#3d5a3d] rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#a8c202] transition-colors">
+                </div>
+              </div>
+
+              <!-- Fila 2: WhatsApp -->
+              <div>
+                <label class="text-white/70 text-sm mb-1 block">WhatsApp</label>
+                <input type="tel" name="whatsapp" required placeholder="+56 9 1234 5678" class="w-full bg-[#2a3f2a] border border-[#3d5a3d] rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#a8c202] transition-colors">
+              </div>
+
+              <!-- Fila 3: Mensaje -->
+              <div>
+                <label class="text-white/70 text-sm mb-1 block">Mensaje (cuéntanos más detalles del perfil que buscas)</label>
+                <textarea name="mensaje" rows="4" required placeholder="Describe el cargo, seniority, tecnologías..." class="w-full bg-[#2a3f2a] border border-[#3d5a3d] rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#a8c202] transition-colors resize-y"></textarea>
+              </div>
+
+              <!-- Botón -->
+              <button type="submit" class="bg-[#a8c202] text-[#1d211c] font-semibold px-8 py-3 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Sección Testimonios con Parallax -->
     <section id="testimonios" class="relative py-24 bg-fixed bg-cover bg-center" style="background-image: url('assets/header05.jpg');">
       <!-- Overlay difuminado -->

@@ -246,11 +246,11 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 class="text-3xl md:text-4xl font-bold text-[#72881c] text-center mb-12">Beneficio Exclusivo para PyMEs</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           <!-- Tarjeta 1 -->
           <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
             <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">1</div>
-            <p class="text-[#1d211c] text-base leading-relaxed">Sabemos que cuidar la caja es clave. Por eso durante tus dos primeros meses contratamos con una tasa promocional del 0,6 % sobre el sueldo bruto del candidato. Accedes al estándar de selección de una gran corporación, a la mitad de costo habitual del mercado.</p>
+            <p class="text-[#1d211c] text-base leading-relaxed">Durante tus dos primeros meses <strong>contratamos con una tasa promocional del 0,6% sobre el sueldo bruto del candidato.</strong> Accedes al estándar de selección de una gran corporación, a la mitad de costo habitual del mercado.</p>
           </div>
 
           <!-- Tarjeta 2 -->
@@ -262,7 +262,13 @@
           <!-- Tarjeta 3 -->
           <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
             <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">3</div>
-            <p class="text-[#1d211c] text-base leading-relaxed"><strong>Garantía de continuidad (45 días):</strong> Si el candidato contratado no continúa en el cargo dentro de ese período, realizamos una reposición sin costo adicional.</p>
+            <p class="text-[#1d211c] text-base leading-relaxed"><strong>Tu inversión está protegida:</strong> Confiamos tanto en nuestros filtros que te entregamos 45 días corridos de garantía de continuidad. Si el candidato no responde al desempeño esperado, realizamos un nuevo proceso sin costo.</p>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
+            <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">4</div>
+            <p class="text-[#1d211c] text-base leading-relaxed">Especialistas en la selección de talentos para modalidad teletrabajo y remota, en Chile y Latinoamérica.</p>
           </div>
         </div>
       </div>
@@ -319,7 +325,7 @@
     <section id="candidatos">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-[#72881c] mb-10 text-center">
-          Únete a la Red de Talentos: Diseña el siguiente paso en tu carrera profesional.
+          Contáctanos: solicita nuestros servicios
         </h2>
 
         <form id="candidate-form" class="reveal max-w-2xl mx-auto space-y-6" novalidate>
@@ -341,47 +347,21 @@
             <span class="error-message text-red-600 text-sm mt-1 block"></span>
           </div>
 
-          <!-- Rol/Especialidad -->
+          <!-- WhatsApp -->
           <div>
-            <label for="rol" class="block text-sm font-medium text-[#1d211c] mb-1">Rol/Especialidad</label>
-            <select id="rol" name="rol" required
-              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent">
-              <option value="" disabled selected>Selecciona tu especialidad</option>
-              <option value="Desarrollo Frontend">Desarrollo Frontend</option>
-              <option value="Desarrollo Backend">Desarrollo Backend</option>
-              <option value="Full Stack">Full Stack</option>
-              <option value="DevOps / SRE">DevOps / SRE</option>
-              <option value="Data Science / Analytics">Data Science / Analytics</option>
-              <option value="UX/UI Design">UX/UI Design</option>
-              <option value="Project/Product Management">Project/Product Management</option>
-              <option value="QA / Testing">QA / Testing</option>
-              <option value="Ciberseguridad">Ciberseguridad</option>
-              <option value="SDR / Ventas TI">SDR / Ventas TI</option>
-              <option value="Otro">Otro</option>
-            </select>
-            <span class="error-message text-red-600 text-sm mt-1 block"></span>
-          </div>
-
-          <!-- LinkedIn -->
-          <div>
-            <label for="linkedin" class="block text-sm font-medium text-[#1d211c] mb-1">LinkedIn (opcional)</label>
-            <input type="url" id="linkedin" name="linkedin"
+            <label for="whatsapp" class="block text-sm font-medium text-[#1d211c] mb-1">WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required
               class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
-              placeholder="https://linkedin.com/in/tu-perfil">
+              placeholder="+56 9 1234 5678">
             <span class="error-message text-red-600 text-sm mt-1 block"></span>
           </div>
 
-          <!-- CV Dropzone -->
+          <!-- Mensaje -->
           <div>
-            <label for="cv-input" class="block text-sm font-medium text-[#1d211c] mb-1">CV (PDF o DOCX, máx. 5 MB)</label>
-            <div id="cv-dropzone" class="dropzone border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-[#a8c202] transition-colors duration-200">
-              <svg class="mx-auto h-10 w-10 text-gray-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-              </svg>
-              <p class="text-[#1d211c] text-sm">Arrastra tu CV aquí o haz clic para seleccionar</p>
-              <p class="text-gray-400 text-xs mt-1">PDF o DOCX, máximo 5 MB</p>
-              <input type="file" id="cv-input" name="cv" accept=".pdf,.docx" class="hidden">
-            </div>
+            <label for="mensaje" class="block text-sm font-medium text-[#1d211c] mb-1">Mensaje (cuéntanos más detalles del perfil que buscas)</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required
+              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent resize-y"
+              placeholder="Describe el cargo, seniority, tecnologías o cualquier detalle relevante..."></textarea>
             <span class="error-message text-red-600 text-sm mt-1 block"></span>
           </div>
 
@@ -389,14 +369,14 @@
           <div>
             <button type="submit"
               class="w-full bg-[#a8c202] text-[#1d211c] font-semibold px-6 py-3 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
-              Subir mi CV / Postular
+              Enviar solicitud
             </button>
           </div>
         </form>
 
         <!-- Success Message -->
         <div id="form-success" class="hidden max-w-2xl mx-auto mt-6 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
-          <p class="text-green-700 font-medium">¡Registro recibido exitosamente!</p>
+          <p class="text-green-700 font-medium">¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.</p>
         </div>
       </div>
     </section>

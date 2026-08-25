@@ -116,10 +116,8 @@
       </div>
     </section>
 
-    <section id="servicios" class="relative bg-[#f5f0e8] overflow-hidden">
-      <!-- Imagen de fondo con 90% de opacidad -->
-      <div class="absolute inset-0 bg-cover bg-center opacity-90" style="background-image: url('assets/background01.jpg');" aria-hidden="true"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+    <section id="servicios" class="bg-[#f5f0e8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h2 class="text-3xl font-bold text-[#72881c] mb-14 text-center">Servicios</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -245,33 +243,35 @@
       </div>
     </section>
 
-    <section id="tarifas">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section id="tarifas" class="relative overflow-hidden">
+      <!-- Imagen de fondo -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-90" style="background-image: url('assets/background01.jpg');" aria-hidden="true"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <h2 class="text-3xl md:text-4xl font-bold text-[#72881c] text-center mb-12">Beneficio Exclusivo para PyMEs</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          <!-- Tarjeta 1 -->
-          <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
-            <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">1</div>
-            <p class="text-[#1d211c] text-base leading-relaxed">Durante tus dos primeros meses <strong>contratamos con una tasa promocional del 0,6% sobre el sueldo bruto de los candidatos que entren durante este periodo.</strong> Accedes al estándar de selección de una gran corporación, a la mitad de costo habitual del mercado.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto pt-8">
+          <!-- Tarjeta 1 - Verde claro -->
+          <div class="reveal relative bg-[#c5d97a] rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-6 pt-12 flex flex-col items-center text-center">
+            <div class="absolute -top-6 w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#72881c] font-bold text-xl">1</div>
+            <p class="text-[#2a3313] text-sm leading-relaxed">Durante tus dos primeros meses <strong>contratamos con una tasa promocional del 0,6% sobre el sueldo bruto de los candidatos que entren durante este periodo.</strong> Accedes al estándar de selección de una gran corporación, a la mitad de costo habitual del mercado.</p>
           </div>
 
-          <!-- Tarjeta 2 -->
-          <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
-            <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">2</div>
-            <p class="text-[#1d211c] text-base leading-relaxed"><strong>Incluido sin costo adicional:</strong> Reportes técnicos y evaluación psicológica para cada finalista. Te ahorras entre $90.000 y $120.000 CLP adicionales por cada candidato evaluado.</p>
+          <!-- Tarjeta 2 - Café oscuro -->
+          <div class="reveal relative bg-[#6b5744] rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-6 pt-12 flex flex-col items-center text-center">
+            <div class="absolute -top-6 w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#6b5744] font-bold text-xl">2</div>
+            <p class="text-white/90 text-sm leading-relaxed"><strong class="text-white">Incluido sin costo adicional:</strong> Reportes técnicos y evaluación psicológica para cada finalista. Te ahorras entre $90.000 y $120.000 CLP adicionales por cada candidato evaluado.</p>
           </div>
 
-          <!-- Tarjeta 3 -->
-          <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
-            <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">3</div>
-            <p class="text-[#1d211c] text-base leading-relaxed"><strong>Tu inversión está protegida:</strong> Confiamos tanto en nuestros filtros que te entregamos 45 días corridos de garantía de continuidad. Si el candidato no responde al desempeño esperado, realizamos un nuevo proceso sin costo.</p>
+          <!-- Tarjeta 3 - Verde oliva -->
+          <div class="reveal relative bg-[#72881c] rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-6 pt-12 flex flex-col items-center text-center">
+            <div class="absolute -top-6 w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#72881c] font-bold text-xl">3</div>
+            <p class="text-white/90 text-sm leading-relaxed"><strong class="text-white">Tu inversión está protegida:</strong> Confiamos tanto en nuestros filtros que te entregamos 45 días corridos de garantía de continuidad. Si el candidato no responde al desempeño esperado, realizamos un nuevo proceso sin costo.</p>
           </div>
 
-          <!-- Tarjeta 4 -->
-          <div class="reveal bg-white rounded-2xl shadow-md border border-[#a8c202]/30 p-6 flex flex-col items-start">
-            <div class="w-10 h-10 rounded-full bg-[#a8c202] flex items-center justify-center text-[#1d211c] font-bold text-lg mb-4">4</div>
-            <p class="text-[#1d211c] text-base leading-relaxed">Nos especializamos en la selección de talentos para <strong>modalidad teletrabajo y remota</strong>, en Chile y Latinoamérica.</p>
+          <!-- Tarjeta 4 - Café claro -->
+          <div class="reveal relative bg-[#c9b79c] rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-6 pt-12 flex flex-col items-center text-center">
+            <div class="absolute -top-6 w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#6b5744] font-bold text-xl">4</div>
+            <p class="text-[#3a2f22] text-sm leading-relaxed">Nos especializamos en la selección de talentos para <strong>modalidad teletrabajo y remota</strong>, en Chile y Latinoamérica.</p>
           </div>
         </div>
       </div>

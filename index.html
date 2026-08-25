@@ -116,8 +116,10 @@
       </div>
     </section>
 
-    <section id="servicios" class="bg-[#f5f0e8]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id="servicios" class="relative bg-[#f5f0e8] overflow-hidden">
+      <!-- Imagen de fondo con 20% de opacidad -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('assets/background01.jpg');" aria-hidden="true"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <h2 class="text-3xl font-bold text-[#72881c] mb-14 text-center">Servicios</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -292,7 +294,7 @@
           <div class="reveal bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
             <h3 class="text-xl font-semibold text-[#1d211c] mb-3">Evaluaciones Incluidas</h3>
             <p class="text-[#1d211c] mb-4">Reportes técnicos y psicológicos sin costo extra por cada finalista.</p>
-            <span class="text-3xl font-bold text-[#a8c202]">hasta $120.000 CLP por finalista</span>
+            <span class="text-3xl font-bold text-[#a8c202]">hasta $120.000 CLP de ahorro por finalista</span>
           </div>
         </div>
 
@@ -322,71 +324,8 @@
       </div>
     </section>
 
-    <section id="candidatos">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-3xl lg:text-4xl font-bold text-[#72881c] mb-10 text-center">
-          Contáctanos: solicita nuestros servicios
-        </h2>
-
-        <form id="candidate-form" class="reveal max-w-2xl mx-auto space-y-6" action="https://formsubmit.co/Hi@mindcode.cl" method="POST">
-          <input type="hidden" name="_subject" value="Nuevo contacto desde Mind & Code Web">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://mindandcode.github.io/mindandcodeweb/">
-          <input type="text" name="_honey" style="display:none">
-          <!-- Nombre -->
-          <div>
-            <label for="nombre" class="block text-sm font-medium text-[#1d211c] mb-1">Nombre</label>
-            <input type="text" id="nombre" name="nombre" maxlength="100" required
-              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
-              placeholder="Tu nombre completo">
-            <span class="error-message text-red-600 text-sm mt-1 block"></span>
-          </div>
-
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-sm font-medium text-[#1d211c] mb-1">Email</label>
-            <input type="email" id="email" name="email" required
-              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
-              placeholder="tu@email.com">
-            <span class="error-message text-red-600 text-sm mt-1 block"></span>
-          </div>
-
-          <!-- WhatsApp -->
-          <div>
-            <label for="whatsapp" class="block text-sm font-medium text-[#1d211c] mb-1">WhatsApp</label>
-            <input type="tel" id="whatsapp" name="whatsapp" required
-              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent"
-              placeholder="+56 9 1234 5678">
-            <span class="error-message text-red-600 text-sm mt-1 block"></span>
-          </div>
-
-          <!-- Mensaje -->
-          <div>
-            <label for="mensaje" class="block text-sm font-medium text-[#1d211c] mb-1">Mensaje (cuéntanos más detalles del perfil que buscas)</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required
-              class="w-full rounded-lg border border-gray-300 px-4 py-2 text-[#1d211c] focus:outline-none focus:ring-2 focus:ring-[#a8c202] focus:border-transparent resize-y"
-              placeholder="Describe el cargo, seniority, tecnologías o cualquier detalle relevante..."></textarea>
-            <span class="error-message text-red-600 text-sm mt-1 block"></span>
-          </div>
-
-          <!-- Submit Button -->
-          <div>
-            <button type="submit"
-              class="w-full bg-[#a8c202] text-[#1d211c] font-semibold px-6 py-3 rounded-lg hover:bg-[#96ad02] transition-colors duration-200">
-              Enviar solicitud
-            </button>
-          </div>
-        </form>
-
-        <!-- Success Message -->
-        <div id="form-success" class="hidden max-w-2xl mx-auto mt-6 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
-          <p class="text-green-700 font-medium">¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección Formulario Alternativo (estilo oscuro con mapa mundi) -->
-    <section class="relative bg-[#1a2e1a] py-20 overflow-hidden">
+    <!-- Sección de Contacto (fondo claro con mapa mundi) -->
+    <section id="candidatos" class="relative bg-[#f5f0e8] py-20 overflow-hidden">
       <!-- Fondo mapa mundi SVG sutil -->
       <div class="absolute inset-0 opacity-10">
         <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">

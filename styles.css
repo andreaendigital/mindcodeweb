@@ -106,12 +106,12 @@ html {
 
 /* --- Benefit Cards (volumetría + glass leve) --- */
 .benefit-card {
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.18),
-    inset 0 1px 1px rgba(255, 255, 255, 0.4),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(2px);
+    0 14px 42px rgba(0, 0, 0, 0.25),
+    inset 0 2px 2px rgba(255, 255, 255, 0.6),
+    inset 0 -3px 9px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(4px);
   transition: transform 300ms ease, box-shadow 300ms ease;
 }
 
@@ -120,14 +120,14 @@ html {
   position: absolute;
   inset: 0;
   border-radius: 1.5rem;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 45%);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 55%);
   pointer-events: none;
 }
 
 .benefit-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.25),
-    inset 0 1px 1px rgba(255, 255, 255, 0.5),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.08);
+    0 28px 63px rgba(0, 0, 0, 0.32),
+    inset 0 2px 2px rgba(255, 255, 255, 0.7),
+    inset 0 -3px 9px rgba(0, 0, 0, 0.12);
 }
